@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&display=swap');
+
+/*  font-family: "Edu VIC WA NT Hand Pre", cursive; */
+/*   font-family: "IBM Plex Serif", serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    font-size: initial;
+    color: #333;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+}
+
+ul,li{
+    list-style: none;
+}
+
+body{
+    font: 18px;
+    color: #333;
+    font-family: "IBM Plex Serif", serif;
+}
+
+#container{
+    width: 63%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+}
+
+header>h1{
+    float: left;
+    font: 700 30px/100px '';
+    font-style: italic;
+}
+
+#gnb{
+    float: right;
+}
+
+#gnb li{
+    font: 500 40px/100px '';
+    float: left;
+    padding-right: 30px;
+}
+
+#gnb li:hover:not(.btn){
+    text-decoration: underline;
+    color: gray;
+}
+
+.btn a{
+    border: 1px solid black;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 32px;
+    margin-left: 32px;
+    padding: 3px 15px;
+    color: gray;
+}
+
+.btn a:hover{
+    color: red;
+}
+/* header end */
+
+#main p{
+    font: 20px/40px '';
+}
+
+.bg{
+    width: 100%;
+    height: 800px;
+    background: url(https://cdn.pixabay.com/photo/2025/05/02/07/28/panorama-9573161_960_720.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 50px;
+}
+
+/* main end */
+
+#infor{
+    margin: 100px 0 200px 0;
+}
+
+#infor P{
+    width: 45%;
+    float: left;
+    margin-right: 5%;
+}
+
+#infor P:nth-of-type(1)::first-letter{
+    font-size: 70px;
+    float: left;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+
+#infor p:nth-child(2)::after{
+    content: 'Jeng Jae';
+    float: right;
+    display: block;
+    margin-top: 120px;
+    font: 600 25px '';
+}

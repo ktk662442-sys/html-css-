@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>색상표현</title>
+    <style>
+        div{
+            width: 30%;
+            height: 300px;
+            float: left;
+            margin: 1%;
+            text-align: center;
+        }
+
+        /* background 속성을 이용하여 그라디언트를 부여(선형 그라디언트) :  background: linear-gradient(to 방향,색상1,색상2)*/
+        .gr_tobottom{ 
+            background: linear-gradient(to bottom,#ff6464,#c582ff);
+        }
+
+        .gr_totop{
+            background: linear-gradient(to top,#ff6464,#c582ff);
+        }
+
+        .gr_toleft{
+            background: linear-gradient(to left,#ff6464 50%,#c582ff 50%);
+            /* 반반으로 가능하다 */
+        }
+
+        .gr_toright{
+            background: linear-gradient(to right,#ff6464 ,#c582ff);
+        }
+
+        .gr_deg{
+             background: linear-gradient(60deg,#ff6464 ,#c582ff);
+             /* 각도조절 */
+        }
+
+          /* 원형 그라디언트 :  background: radial-gradient(색상1,색상2) */
+        .gr_ra{
+            background: radial-gradient(#ff6464,#c582ff);
+        }
+
+        /* 박스 그림자 효과 : box-shadow : x축 y축 흐림도 그림자크기 그림자색상 */
+        .box1{
+            box-shadow: 2px 2px 4px #333;
+        }
+
+        .box2{
+            box-shadow: 2px 2px 5px 10px #333;
+        }
+
+        .box3{
+            box-shadow: inset 12px 12px 11px #333;
+            /* inset : 엘리먼트 안쪽 그림자 생성 */
+        }
+
+        .box4{
+             box-shadow: inset 5px -5px 5px #333, -5px 5px 5px red
+             /* 다중그림자 부여 */
+        }
+
+        /* 블러효과 */
+        .fil_b{
+            filter: blur(5px);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>웹 색상표현</h1>
+    <p>
+        단어(black,pinke,white....) / hex(#ff000) / rgb / hsl / opactiy / box-shadow / text-shadow
+    </p>
+
+    <!-- 그라데이션 방향 설정 -->
+     <div class="gr_tobottom box1"></div>
+     <div class="gr_totop box2"></div>
+     <div class="gr_toleft box3"></div>
+     <div class="gr_toright box4"></div>
+     <div class="gr_deg"></div>
+     <div class="gr_ra fil_b"></div>
+    
+</body>
+</html>

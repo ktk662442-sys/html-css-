@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libertinus+Mono&family=My+Soul&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "IBM Plex Serif", serif;
+}
+
+ul,li{
+    list-style: none;
+}
+
+body{
+    font-family: "IBM Plex Serif", serif;
+    font-size: 14px;
+    color: #fff;
+    background: linear-gradient(to bottom, #9b5143, #7a3f33) no-repeat;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+header{
+    width: auto;
+    overflow: hidden; /* 튀어나오는 것을 안보이게 하기 위해서 높이대신 */
+    padding: 50px;
+}
+
+header>a{
+    float: left;
+    font-size: 30px;
+    line-height: 25px;
+    font-weight: 800;
+}
+
+header i{
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+}
+/* header end */
+
+section{
+    width: 73%;
+    margin: 100px auto;
+    height: 1200px; /* 'position'을 잡기위해서 */
+    position: relative; /*'bg'를 위한 부모기준*/
+}
+
+.bg{
+    width: 455px;
+    height: 683px;
+    float: left;
+    box-shadow: 100px 100px 80px 0 rgba(0, 0, 0,0.5);
+}
+
+.bg span{
+    width: 455px;
+    height: 683px;
+    display: block;/* 'span'은 글자성격(인라인)성격을 가지고 있다 */
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0.3));
+    opacity: 0; /* 동작을 구현하기 위해서 안보이게 한다 */
+}
+
+.bg:hover span{
+    opacity: 1;
+}
+
+.infor{
+    width: 500px;
+    height: 760px;
+    float: right;
+    position: relative; /* 'text,h1'를 위한 부모기준 */
+    z-index: 3;
+}
+
+.infor>h1{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 35px;
+}
+
+.text p{
+    margin-top: 50px;
+    font: 300 15px/30px "'Faculty Glyphic', serif";
+}
+
+.bg_2{
+    width: 688px;
+    height: 435px;
+    box-shadow: 100px 100px 80px 0 rgba(0, 0, 0,0.5);
+    position: absolute; /* 'section' 밑으로 보낸다 */
+    bottom: 30px;
+    left: 300px;
+    z-index: 0;
+}
+
+.bg_2 span{
+    width: 688px;
+    height: 435px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0.3));
+    opacity: 0;
+}
+
+.bg_2:hover span{
+    opacity: 1;
+}
+/* section end */
+
+footer{
+    width: auto;
+    padding: 50px 0;
+    overflow: hidden;
+    background-color: #37140e;
+    text-align: center;
+}
+/* footer end */
+

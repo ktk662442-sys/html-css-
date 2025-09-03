@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 응용</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 
+        1. text-transform = 글자의 크기를 바꾸는 것
+        = uppercase : 전부 대문자
+        = lowercase : 전부 소문자
+        = capitalize : 각 단어의 첫 글자를 대문자
+        = none : 원래 글자 크기 그대로 
+
+        2. 객체이름:nth-of-type() 
+        = 특정 요소 중에서 같은 종류의 요소에서 만 첫 번째 요소를 선택하는 속성
+        = 예를 들어 여러 개의 문단이 있을 때 그 중에서 첫 번째 문단만 선택해서 스타일을 적용
+
+        3. 객체이름::first-letter
+        = 문단의 첫 글자 하나만 선택해서 스타일을 적용하는 속성
+
+        4. 객체이름::after 
+        = 어떤 요소 뒤에 새로운 내용을 추가하는 속성 / 'content'으로 이름을 지어주기 
+
+        5. 객체이름::before 
+        = 어떤 요소 앞에 새로운 내용을 추가하는 속성 / 'content'으로 이름을 지어주기
+    -->
+
+    <div id="container">
+        <header>
+            <h1><a href="#">Detml</a></h1>
+
+            <ul id="gnb">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Account</a></li>
+                <li class="btn"><a href="#">Login</a></li>
+            </ul>
+        </header> 
+        <!-- header end -->
+    </div>
+
+        <div id="main">
+            <div id="container">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    Quam corrupti architecto veritatis iusto molestias, atque nostrum itaque quidem! Ullam harum ut laborum nam fuga voluptas! <br>
+                    Velit exercitationem cupiditate placeat sint.
+                </p>
+            </div>
+
+            <div class="bg"></div>
+        </div>
+        <!-- main end -->
+
+        <div id="infor">
+            <div id="container">
+                <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source
+                    <br><br><br>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source
+                </p>
+
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+                </p>
+            </div>
+        </div>
+    
+</body>
+</html>

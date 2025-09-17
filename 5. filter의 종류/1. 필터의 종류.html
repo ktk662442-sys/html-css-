@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>필터의 종류</title>
+    <style>
+        img{
+            width: 232px;
+            float: left;
+            margin: 10px;
+            display: block;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        img:nth-child(1):hover{
+            filter: blur(5px);
+            /* blur : 흐릿한 느낌/ 'px'단위 / 숫자 값이 높을 수록 블러효과는 커진다 */
+        }
+        
+        img:nth-child(2):hover{
+            filter: brightness(150%);
+            /* brightness : 밝기조절 / 0(가장 어둡다) ~ 100%(원본) ~ 101%(밝아진다 '110%'부터 밝은 느낌을 받는다) / '%'단위 */
+        }
+
+        img:nth-child(3):hover{
+            filter: contrast(200%);
+            /* contrast : 대비조정 / '%사용 / 옛날 컬러 사진 느낌을 준다' */
+        }
+
+        img:nth-child(4):hover{
+            filter: grayscale(100%);
+            /* grayscale : '%'단위 / 수치값이 높으수록 흑백사진에 가깝자 / 0(시작값) ~ 100(흑백) */
+        }
+
+        img:nth-child(5):hover{
+            filter: hue-rotate(360deg); 
+            /* hue-rotate : 'deg'단위 / 색반전 */
+        }
+
+        img:nth-child(6):hover{
+            filter: invert(100%);
+            /* invert : '%'단위 / 밝기모드 / 0(원본) ~ 100%(어두워진다) / 심령사진 같은 느낌을 준다 */
+        }
+
+        img:nth-child(7):hover{
+            filter: saturate(200%);
+            /* saturate : '%'단위 / 채도반환 / 채도가 빠즈느냐 채도가 늘어나는 것인나 */
+        }
+
+        img:nth-child(8):hover{
+            filter: sepia(50%);
+            /* sepia : '%'단위 / 빈티지한 분위기(옛날 흑백 사진의 분위기) / 0%(시작값) ~ 100%(마지막) */
+        }
+
+        img:nth-child(9):hover{
+            filter: blur(5px) sepia(50%);
+            /* 다중효과 : 동시적용 / 구분은 띄어쓰기로 한다 */
+        }
+
+        img:nth-child(10):hover{
+            filter: none;
+            /*none : 필터효과 제거한다 */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>filter</h1>
+    <h3>
+        = 사전에 다양한 이미지 변화효과를 부여, '블러'나 그외의 
+        동작을 함께 사용하며 스타일링을 줄 수 있다
+    </h3>
+
+     <figure>
+        <img src="jeju-island-6929633_1280.jpg" alt="img">
+        <img src="jeju-island-6929633_1280.jpg" alt="img">
+        <img src="jeju-island-6929633_1280.jpg" alt="img">
+        <img src="jeju-island-6929633_1280.jpg" alt="img">
+        <img src="jeju-island-6929633_1280.jpg" alt="img">
+        <img src="jeju-island-6929633_1280.jpg" alt="img">
+        <img src="jeju-island-6929633_1280.jpg" alt="img">
+        <img src="jeju-island-6929633_1280.jpg" alt="img">
+        <img src="jeju-island-6929633_1280.jpg" alt="img">
+        <img src="jeju-island-6929633_1280.jpg" alt="img">
+     </figure>
+    
+</body>
+</html>

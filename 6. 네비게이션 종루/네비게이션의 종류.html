@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네비게이션의 종류</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            color: #fff;
+        }
+
+        a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        ul,li{
+            list-style: none;
+        }
+
+        nav{
+            width: 80%;
+            margin: 50px auto;
+            overflow:hidden;
+            background-color: black;
+        }
+
+        /* 1구 : text-align을 사용 */
+        .nav_1{
+            text-align: center;
+        }
+
+        .nav_1 ul{
+            display: inline-block
+        }
+
+        .nav_1 li{
+            float: left;
+            margin: 0 30px; 
+            line-height: 80px;
+        }
+
+
+
+        /* 2구 : float을 사용*/
+
+        .nav_2{
+            padding: 20px;
+        }
+
+        .nav_2>a{
+            float: left;
+            font-size: 40px;
+        }
+
+        .nav_2 ul{
+            float: right;
+        }
+
+        .nav_2 li{
+            float: left;
+        }
+
+         .nav_2 li a{
+            margin-left: 60px;
+        }
+
+
+
+        /* 3구 : position을 사용 */
+        .nav_3{
+            width: 100%;
+            position: relative;
+            text-align: center;
+        }
+
+         .nav_3>a{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 30px;
+            font: 900 30px/80px '';
+         }
+
+         .nav_3 ul{
+            display: inline-block;
+         }
+
+         .nav_3 li{
+            float: left;
+            padding: 0 30px;
+            line-height: 80px;
+         }
+
+        .nav_3 select{
+            padding: 0 20px;
+            height: 30px;
+            color: black;
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            line-height: 80px;
+        }
+
+        .nav_3 select option{
+            color: black;
+        }
+
+
+
+       
+    </style>
+</head>
+<body>
+
+    <!-- 
+        GNB : 메인메누
+        LNB : 서브메뉴
+    -->
+
+    <!-- 1구 : text-align -->
+     <nav class="nav_1">
+        <ul>
+            <li><a href="#">menu_1</a></li>
+            <li><a href="#">menu_2</a></li>
+            <li><a href="#">menu_3</a></li>
+            <li><a href="#">menu_4</a></li>
+            <li><a href="#">menu_5</a></li>
+        </ul>
+     </nav>
+
+
+     <!-- 2구 : float -->
+      <nav class="nav_2">
+        <a href="#">LOGO</a>
+
+        <ul>
+            <li><a href="#">menu_1</a></li>
+            <li><a href="#">menu_2</a></li>
+            <li><a href="#">menu_3</a></li>
+            <li><a href="#">menu_4</a></li>
+            <li><a href="#">menu_5</a></li>
+        </ul>
+      </nav>
+
+
+
+       <!-- 3구 : position -->
+      <nav class="nav_3">
+        <a href="#">LOGO</a>
+
+        <ul>
+            <li><a href="#">menu_1</a></li>
+            <li><a href="#">menu_2</a></li>
+            <li><a href="#">menu_3</a></li>
+            <li><a href="#">menu_4</a></li>
+            <li><a href="#">menu_5</a></li>
+        </ul>
+
+
+        <select>
+            <option>=text=</option>
+            <option>=text=</option>
+            <option>=text=</option>
+            <option>=text=</option>
+            <option>=text=</option>
+        </select>
+      </nav>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input 태그</title>
+</head>
+<body>
+
+    <!-- 
+        input 
+        = 기본적으로 '글자(인라인)'와 같은 성격이지만 기본적인 폭의 넓이와 높이를 가지고 있다
+        = 부모한테서만 'text-align : center'적용해야 한다
+
+        <input> 속성 종류
+
+        속성명             설명                                                          
+        | `type`         | 입력 필드의 종류를 정함 (예: `text`, `password`, `checkbox`, `file` 등) 
+        | `name`         | 폼 데이터 전송 시 이름 역할을 함 (서버에서 이 이름으로 값 받음)                     
+        | `value`        | 기본값을 설정함 또는 사용자가 입력한 값이 저장됨                                 
+        | `placeholder`  | 입력 전 안내 문구를 보여줌 (예: "이메일을 입력하세요")                           
+        | `required`     | 필수 입력 필드로 만듦 (비워두면 폼 전송 안됨)                                 
+        | `readonly`     | 읽기 전용 필드로 만듦 (수정 불가)                                        
+        | `disabled`     | 입력 불가능하게 만듦 (회색처리, 전송도 안 됨)                                 
+        | `maxlength`    | 입력 가능한 최대 글자 수 제한                                           
+        | `min` / `max`  | 숫자나 날짜 입력 시 최소/최대값 제한                                       
+        | `step`         | 숫자나 범위 입력 시 증가 단위 지정                                        
+        | `checked`      | 체크박스나 라디오 버튼이 기본적으로 선택되어 있게 함                               
+        | `autofocus`    | 페이지 로드시 자동으로 커서가 이 필드에 감                                    
+        | `autocomplete` | 자동 완성 기능 사용 여부 (`on`, `off`) 설정                             
+    -->
+
+    <form autocomplete="on">
+        <input type="text" name="email" placeholder="아이디를 입력하세요" autofocus>
+        <input type="password" name="pw">
+    </form>
+
+
+    
+</body>
+</html>

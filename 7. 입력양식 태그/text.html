@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            transition: all 0.5s ease-in-out;
+        }
+
+        form{
+            width: 60%;
+            height: 50px;
+            margin: 15px auto;
+            text-align: center;
+        }
+
+        form::before{
+            content: 'JungJae';
+            font-size: 80px;
+            font-weight: 900;
+        }
+
+        input[type='search']{
+            height: 50px;
+            width: 70%;
+            border: 1px solid #e0e0e0;
+            padding: 10px;
+            display: block;
+            margin: auto;
+            padding-left: 13px;
+            outline: none;
+        }
+
+        input:focus{
+            width: 100%;
+            background: none;
+            background-position: 20%;
+            box-shadow: 0 0 0 8px rgb(247, 161, 161);
+        }
+
+        select{
+            background-color: red;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 1px solid white;
+            padding: 10px 7px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <input type="search">
+    </form>
+
+    <footer>
+        <select>
+            <option>직접입력</option>
+            <option>naver.com</option>
+            <option>naver.com</option>
+            <option>naver.com</option>
+            <option>naver.com</option>
+            <option>naver.com</option>
+        </select>
+    </footer>
+    
+</body>
+</html>

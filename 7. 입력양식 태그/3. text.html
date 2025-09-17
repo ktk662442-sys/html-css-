@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            transition: all ease-in 0.5s;
+        }
+
+        form{
+            width: 60%;
+            height: 50px;
+            margin: 15px auto;
+            /* background-color: antiquewhite; */
+            text-align: center;
+        }
+
+        form::before{
+            content: 'JungJae';
+            font-size: 80px;
+            font-weight: 900;
+        }
+
+        input[type="search"]{ /* 글자의 겅격을 가지고 있다 */
+            height: 50px;
+            width: 70%;
+            border: 1px solid #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            display: block;
+            margin: auto;
+            padding-left: 13px;
+            outline: none;
+        }
+
+        input:focus{
+            width: 100%;
+            background: none;
+            background-position: 20%;
+            box-shadow: 0 0 0 8px rgb(247, 161, 161);
+        }
+
+        footer{
+            background-color: black;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            padding: 50px 0;
+            overflow: hidden;
+        }
+
+        select{
+            background-color: red;
+            color: white;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid wheat;
+            padding: 10px 7px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        outline: none
+        = 가장 바깥부분을 둘러싸고 있는 아웃라인 부분의 스타일을 설정
+
+        :focus
+        = 검색창을 다양한 디자인으로 사용가능
+        = 가상 클래스 
+        = 사용자가 키보드,마우스 등을 터치했을 경우 이벤트 발생
+    -->
+
+    <form>
+        <input type="search">
+    </form>
+
+    <footer> 
+         <select>
+            <option>패밀리</option>
+            <option>패밀리1</option>
+            <option>패밀리2</option>
+        </select>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input = type속성 종류</title>
+    <style>
+        input{display: block; margin-bottom: 20px;}
+    </style>
+</head>
+<body>
+
+    <!-- 
+        1. 텍스트 관련 태그
+        `type` 값        기능                               
+        | `text`     | 일반 텍스트 입력                        
+        | `password` | 비밀번호 입력 (글자가 ●●●로 숨겨짐)           
+        | `email`    | 이메일 형식 입력 (예: `@` 포함), 유효성 검사 가능 
+        | `tel`      | 전화번호 입력 (형식은 자유, 키보드 최적화됨)       
+        | `url`      | 웹사이트 주소 입력 (예: https\://...)    
+        | `search`   | 검색창 모양의 텍스트 입력 (X 버튼이 생길 수 있음)   
+ 
+        
+
+        2. 숫자/날짜 관련 태그
+        `type` 값            기능                     
+        | `number`         | 숫자만 입력 (화살표로 숫자 조절 가능) 
+        | `range`          | 슬라이드 바로 범위 조절          
+        | `date`           | 날짜 선택 (달력 UI 제공)       
+        | `time`           | 시간 선택                  
+        | `month`          | 연도 + 월 선택              
+        | `week`           | 연도 + 주 선택              
+        | `datetime-local` | 날짜 + 시간 선택 (시간대 없음)    
+
+
+        
+        3. 선택 관련 태그
+        `type` 값        기능                            
+        | `checkbox` | 여러 개 중 다중 선택 가능 (체크박스)        
+        | `radio`    | 여러 개 중 하나만 선택 가능 (라디오 버튼)     
+        | `button`   | 클릭 가능한 일반 버튼 (동작은 자바스크립트로 처리) 
+        | `submit`   | 폼(form) 전송 버튼                 
+        | `reset`    | 입력값 초기화 버튼                    
+
+
+        
+        4. 파일 & 기타 태그
+        `type`      값 기능                      
+        | `file`   | 파일 선택 (업로드용)            
+        | `hidden` | 사용자에게 안 보이지만 데이터 전송에 사용 
+        | `color`  | 색상 선택 (색상 팔레트 표시)       
+        | `image`  | 이미지를 버튼처럼 사용해 폼 전송      
+
+    -->
+
+        <input type="text" placeholder="이름 입력">
+        <input type="email" placeholder="이메일 입력">
+        <input type="password" placeholder="비밀번호">
+        <input type="number" min="0" max="100">
+        <input type="date">
+        <input type="checkbox" checked>
+        <input type="radio" name="gender" value="male">
+        <input type="file">
+        <input type="color">
+        <input type="submit" value="전송">
+
+    
+</body>
+</html>

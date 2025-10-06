@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex_direction</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container{
+            background-color: violet;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item{
+            background-color: orange;
+            border: 1px solid black;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        flex_direction
+        = display-flex 부모박스에 선언
+        = flex-direction : row(기본값), row-reverse, column, column-reverse
+        = 메인축 방향으로 가로,세로
+
+        <가로>
+        1. row(기본값) : 메인축 방향(가로축), 통상적인 언어로 : 왼쪽 ~ 오른쪽
+        2. row-reverse : 메인축 방향(가로축), 오른쪽 ~ 왼쪽
+
+        <세로>
+        3. column : 메인축 방향(세로축), 위 ~ 아래
+        4. column-reverse : 메인축 방향(세로축), 아래 ~ 위
+    -->
+
+    <div class="container">
+        <div class="item">flex_AA</div>
+        <div class="item">flex_BB</div>
+        <div class="item">flex_CC</div>
+    </div>
+    
+</body>
+</html>

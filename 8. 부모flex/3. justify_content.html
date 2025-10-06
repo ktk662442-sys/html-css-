@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify_content</title>
+    <style>
+        .container{
+            background-color: aqua;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .item{
+            background-color: yellow;
+            border: 1px solid black;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        justify_content
+        = 메인축의 방향의 'itme(자식)'을 정렬방법 지정 
+
+        1. justify-content :flex-start : 기본값
+        2. justify-content :flex-end : 메인축의 끝점
+        3. justify-content :center : 메인축의 중앙
+        4. justify-content : space-between : 공간 전체를 활용하여 'item(자식)'을 배치 / 일정한 간격으로 '왼쪽 - 중앙 - 오른쪽'으로 배치
+        5. justify-content : space-around : 'space-between'비슷한 성격이지만 왼쪽/오른쪽 양옆으로 공간이 생긴다 / 공간 전체를 활용하여 'item'외곽으로 공간을 두고 배치
+        5. justify-content : space-evenly : 일정한 간격으로 띄우고 간격을 배치한다
+    -->
+
+    <div class="container">
+        <div class="item">flex-AA</div>
+        <div class="item">flex-BB</div>
+        <div class="item">flex-CC</div>
+    </div>
+    
+</body>
+</html>

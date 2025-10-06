@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex란</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+        .container{
+            background-color: lightblue;
+            display: flex;
+        }
+
+        .item{
+            background-color: lightgray;
+            border: 1px solid black;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        <flex>
+        = 하나의 플렉스 아이템이 자신의 컨테이너가 차지하는 공간에 맞추기 위해 크기를 키우거나 줄이는 방법을 설정하는 속성
+
+        <flex구조>
+        = 부모flex -> 자식flex
+
+        <display : flex> : 선언
+        = 부모에서 선언 / item(자식요소)이 '부모 flex'요소로 나열
+
+        <display : inline-flex>
+        = 글장성격 가진 flex-conteainer(부모태그)만든다
+        = 'inline-block'과 비슷하고 flex효과도 같이 받는다
+    -->
+
+    <div class="container">
+        <div class="item">flex_AAA</div>
+        <div class="item">flex_BBB</div>
+        <div class="item">flex_CCC</div>
+    </div>
+    
+</body>
+</html>

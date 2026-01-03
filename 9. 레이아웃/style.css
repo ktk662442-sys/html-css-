@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-family: 'Sansation', sans-serif;
+}
+
+ul, li{
+    list-style: none;
+}
+
+body{
+    color: #333;
+    font-family: 'Sansation', sans-serif;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative; /* 컨텐츠 정렬의 기준 */
+    z-index: 999;
+    text-align: center;
+}
+
+header>a{
+    width: 15%;
+    display: block;
+    position: absolute;
+    left: 100px;
+    font-size: 22px;
+    line-height: 70px;
+    font-weight: 800;
+    letter-spacing: 3px;/* letter-spacing = 글자의 간격 */
+}
+
+header ul{  
+    display: inline-block;
+}
+
+header li{
+    float: left;
+    margin: 0 20px;
+    line-height: 70px;
+}
+
+.icon{
+    height: 15px;
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.icon i{
+    margin-right: 10px;
+}
+
+aside{
+    width: 21%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+aside video{
+    display: block;
+    width: 65%;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+aside h2{
+    color: rgb(82, 80, 80);
+    font-family: 'Libre Barcode 39 Extended', cursive;
+    font-weight: 500;
+}
+
+aside p{
+    margin-top: 15px;
+    text-decoration: underline;
+}
+
+.contents{
+    width: 79%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    float: right;
+}
+
+.main_bg{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.main_bg img{
+    width: 688px;
+    height: 563px;
+    float: right;
+    margin-top: 50px;
+}
+
+.text{
+    width: 60%;
+    position: absolute;
+    top: 150px;
+    left: 0;
+}
+
+.text p{
+    font-size: 100px;
+    font-family: 'Libre Barcode 39 Extended', cursive;
+    font-weight: 300;
+    border-bottom: 1px solid #333;
+    font-style: italic;
+}
+
+.text::first-letter{
+    font-size: 150px;
+}
+
+.text a{
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 100px;
+    display: block  ;
+}
+
+.magazine{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    overflow: hidden    ;
+}
+
+.magazine::before{
+    content: 'Magazine';
+    line-height: 150px;
+    display: block;
+    text-align: center;
+    font-family: 'Libre Barcode 39 Extended', cursive;
+}
+
+.con_bn{
+    width: 33.3%;
+    float: left;
+    overflow: hidden;
+}
+
+.con_bn:nth-child(1){
+    border-right: 1px solid #333;
+}
+
+.con_bn:nth-child(3){
+    border-left: 1px solid #333;
+}
+
+
+.con{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 200;
+    overflow: hidden;
+}
+
+.con a{
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    text-decoration: underline;
+    display: block;
+    padding: 30px 0;
+}
+
+.img_wrap{
+    width: 100%;
+    overflow: hidden;
+}
+
+.con .img_wrap:hover img{
+    transform: scale(1.1);
+}

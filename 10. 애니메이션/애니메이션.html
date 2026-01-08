@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 
+        <animation>
+        = 요소에 부드러운 애니메이션 효과를 부여하는 속성
+        = transition과 달리 상태 변화가 아닌, 특정 동작을 지속적으로 반복할 때 사용
+        = 주요 속성
+        1) animation-name : 애니메이션의 이름을 지정 / 꼭 지정해주기
+        2) animation-duration : 애니메이션이 재생되는 시간을 지정
+        3) animation-timing-function : 애니메이션의 속도 곡선을
+              지정 (예: ease, linear, ease-in, ease-out, ease-in-out)
+        4) animation-delay : 애니메이션이 시작되기 전의 지연 시간을 지정
+        5) animation-iteration-count : 애니메이션이 반복되는 횟수를
+                지정 (숫자 또는 infinite)
+        6) animation-direction : 애니메이션의 재생 방향을 지정
+                (normal : 아무것도 지정되지 않음, reverse : 반대로 재생, alternate : 번갈아 재생, alternate-reverse : 반대로 번갈아 재생)
+        7) animation-fill-mode : 애니메이션이 끝난 후 요소의 상태를
+                지정 (none : 기본값, forwards : 앞으로 유지, backwards : 뒤로 유지, both : 양쪽 모두 유지)
+        8) animation-play-state : 애니메이션의 재생 상태를 지정
+                (running : 재생 중, paused : 일시 정지)
+            <단축> animation: 이름 / 지속시간 / 타이밍함수 / 지연 / 시간 / 반복횟수 / 방향 / 채우기상태 / 재생상태;
+
+        <@keyframes 규칙을 사용하여 애니메이션의 단계별 상태를 정의>
+        = 예시  
+        @keyframes 애니메이션_이름 {
+            from(0%) {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to(100%) {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        <애니메이션 순서>
+        1. 요소 : 이름을 붙이기(animation-name)
+        2. @keyframes : 애니메이션 단계 정의
+        3. 요소 : 애니메이션 속성 설정(animation-duration 등)
+    -->
+
+    <div id="main">
+        <h1>Css Animation</h1>
+        <p>animation - text</p>
+        <div class="object"></div>
+    </div>
+    
+</body>
+</html>
